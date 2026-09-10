@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillUp LMS - My Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SkillUp<span>LMS</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-icon">🛒 <span id="cart-count">0</span></a>
+      <a href="profile.html" class="btn btn-outline active">Profile</a>
+      <button id="logout-btn" class="btn btn-outline">Logout</button>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main class="profile-page">
+    <h1>My Profile</h1>
+
+    <section class="profile-card">
+      <div class="profile-avatar">👤</div>
+      <div class="profile-info">
+        <h2 id="profile-name">Guest User</h2>
+        <p id="profile-email">Not logged in</p>
+      </div>
+    </section>
+
+    <section class="profile-form-section">
+      <h3>Edit Details</h3>
+      <form id="profile-form">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+
+        <label for="bio">Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself"></textarea>
+
+        <button type="submit" class="btn btn-primary btn-large">Save Changes</button>
+        <p id="profile-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SkillUp LMS. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="404.html">Test 404</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

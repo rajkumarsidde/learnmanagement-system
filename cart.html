@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillUp LMS - Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">SkillUp<span>LMS</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="cart.html" class="cart-icon active">🛒 <span id="cart-count">0</span></a>
+      <a href="login.html" class="btn btn-outline">Login</a>
+      <a href="register.html" class="btn btn-primary">Sign Up</a>
+    </div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <main class="cart-page">
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+      <!-- cart items injected here via JS from localStorage -->
+    </div>
+    <div class="cart-summary">
+      <h3>Total: $<span id="cart-total">0</span></h3>
+      <a href="checkout.html" class="btn btn-primary btn-large">Proceed to Checkout</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SkillUp LMS. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="404.html">Test 404</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
